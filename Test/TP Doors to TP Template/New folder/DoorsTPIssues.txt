@@ -1,0 +1,28 @@
+While processing cell <row number:7 and column: 8>, one of the below formats does not match 
+1.Verify(.*) is (.*)
+2. At end of <time> 
+
+While processing cell <row number:8 and column: 7>, one of the below formats does not match 
+1.Set(.*) to (.*)
+2. At <Timing formats>
+
+While processing cell <row number:18 and column: 7>, one of the below formats does not match 
+1.Set(.*) to (.*)
+2. At <Timing formats>
+
+While processing cell <row number:20 and column: 7>, one of the below formats does not match 
+1.Set(.*) to (.*)
+2. At <Timing formats>
+
+While processing cell <row number:21 and column: 7>, one of the below formats does not match 
+1.Set(.*) to (.*)
+2. At <Timing formats>
+
+While processing cell <row number:25 and column: 8>, one of the below formats does not match 
+1.Verify(.*) is (.*)
+2. At end of <time> 
+
+While processing cell <row number:26 and column: 7>, one of the below formats does not match 
+1.Set(.*) to (.*)
+2. At <Timing formats>
+

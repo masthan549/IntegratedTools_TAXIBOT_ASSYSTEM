@@ -1,0 +1,230 @@
+
+
+	TEST 1
+	FAMILY Nominal
+
+	 ELEMENT 1
+
+		----Inputs
+		VAR	swPos1byte0to4.swd_a_absolutAng_deg,    	INIT=10,                           			EV=INIT
+		VAR	swd_ctr_heartbeatCount,                 	INIT=12,                           			EV=INIT
+		VAR	swd_vel_wheelSpeed_degps,               	INIT=14,                           			EV=INIT
+		VAR	swPos3byte0to1.swd_a_wheelAng3_deg,     	INIT=1,                            			EV=INIT
+		VAR	swd_ctr_sw3countr,                      	INIT=2,                            			EV=INIT
+		VAR	swd_crc_sw3crc,                         	INIT=3,                            			EV=INIT
+
+		----Outputs
+		VAR	swpd_a_driverSteerWheel_deg,            	INIT==,			EV=-180
+		VAR	swpd_enum_driverSwTrustLevel,           	INIT==,			EV=SW_BAD_E
+		VAR	swpd_enum_driverSteerWheelValid,        	INIT==,			EV=SW_INVALID_E
+
+		#A400M_Init;
+
+	 END ELEMENT  1
+
+	 ELEMENT 2
+
+	-------Inputs
+		VAR	swPos1byte0to4.swd_a_absolutAng_deg,    	INIT=10,                           			EV=INIT
+		VAR	swd_ctr_heartbeatCount,                 	INIT=12,                           			EV=INIT
+		VAR	swd_vel_wheelSpeed_degps,               	INIT=14,                           			EV=INIT
+		VAR	swPos3byte0to1.swd_a_wheelAng3_deg,     	INIT=1,                            			EV=INIT
+		VAR	swd_ctr_sw3countr,                      	INIT=2,                            			EV=INIT
+		VAR	swd_crc_sw3crc,                         	INIT=3,                            			EV=INIT
+
+		--- Function Call
+		#for(i=1;i<=18;i++)
+		#{
+			#A400M_Init;
+		#}
+
+	 END ELEMENT  2
+
+	 ELEMENT 3
+
+		Comment -----------------------------
+		Comment Disturbance not detected from SKF1 sensor.
+		Comment Disturbance not detected from SKF2 sensor.
+		Comment Disturbance not detected from SASA sensor.
+		Comment So driver steering wheel angle updated with the calculated angle from SKF2, SASA and SKF1 sensor.
+		Comment -----------------------------
+
+		----Inputs
+		VAR	swPos1byte0to4.swd_a_absolutAng_deg,    	INIT=10,                           			EV=INIT
+		VAR	swd_ctr_heartbeatCount,                 	INIT=12,                           			EV=INIT
+		VAR	swd_vel_wheelSpeed_degps,               	INIT=14,                           			EV=INIT
+		VAR	swPos3byte0to1.swd_a_wheelAng3_deg,     	INIT=1,                            			EV=INIT
+		VAR	swd_ctr_sw3countr,                      	INIT=2,                            			EV=INIT
+		VAR	swd_crc_sw3crc,                         	INIT=3,                            			EV=INIT
+		VAR	mmd_enum_ctrlModeToApply,               	INIT=MM_LVC_E,                     			EV=INIT
+
+		----Outputs
+		VAR	swpd_a_driverSteerWheel_deg,            	INIT=-180.0,             					EV=0
+		VAR	swpd_enum_driverSteerWheelValid,        	INIT=SW_INVALID_E,       					EV=SW_INVALID_E
+
+		#A400M_Init;
+
+	 END ELEMENT  3
+
+	 ELEMENT 4
+
+	-------Inputs
+		VAR	swPos1byte0to4.swd_a_absolutAng_deg,    	INIT=10,                           			EV=INIT
+		VAR	swd_ctr_heartbeatCount,                 	INIT=12,                           			EV=INIT
+		VAR	swd_vel_wheelSpeed_degps,               	INIT=14,                           			EV=INIT
+		VAR	swPos3byte0to1.swd_a_wheelAng3_deg,     	INIT=1,                            			EV=INIT
+		VAR	swd_ctr_sw3countr,                      	INIT=2,                            			EV=INIT
+		VAR	swd_crc_sw3crc,                         	INIT=3,                            			EV=INIT
+		VAR	mmd_enum_ctrlModeToApply,               	INIT=MM_LVC_E,                     			EV=INIT
+
+		--- Function Call
+		#for(i=1;i<=9;i++)
+		#{
+			#A400M_Init;
+		#}
+
+	 END ELEMENT  4
+
+	 ELEMENT 5
+
+		Comment -----------------------------
+		Comment Disturbance detected from SKF1 sensor.
+		Comment Disturbance not detected from SKF2 sensor.
+		Comment Disturbance not detected from SASA sensor.
+		Comment So driver steering wheel angle updated with the calculated angle from SKF2, SASA and previous value of SKF1 sensor.
+		Comment -----------------------------
+
+		----Inputs
+		VAR	swPos1byte0to4.swd_a_absolutAng_deg,    	INIT=10,                           			EV=INIT
+		VAR	swd_ctr_heartbeatCount,                 	INIT=12,                           			EV=INIT
+		VAR	swd_vel_wheelSpeed_degps,               	INIT=14,                           			EV=INIT
+		VAR	swPos3byte0to1.swd_a_wheelAng3_deg,     	INIT=1,                            			EV=INIT
+		VAR	swd_ctr_sw3countr,                      	INIT=2,                            			EV=INIT
+		VAR	swd_crc_sw3crc,                         	INIT=3,                            			EV=INIT
+		VAR	mmd_enum_ctrlModeToApply,               	INIT=MM_LVC_E,                     			EV=INIT
+
+		----Outputs
+		VAR	swpd_a_driverSteerWheel_deg,            	INIT=0.0,                					EV=19
+		VAR	swpd_enum_driverSwTrustLevel,           	INIT=,                   					EV=SW_BAD_E
+		VAR	swpd_enum_driverSteerWheelValid,        	INIT=SW_INVALID_E,       					EV=SW_INVALID_E
+
+		#A400M_Init;
+
+	 END ELEMENT  5
+
+	 ELEMENT 6
+
+	-------Inputs
+		VAR	swPos1byte0to4.swd_a_absolutAng_deg,    	INIT=10,                           			EV=INIT
+		VAR	swd_ctr_heartbeatCount,                 	INIT=12,                           			EV=INIT
+		VAR	swd_vel_wheelSpeed_degps,               	INIT=14,                           			EV=INIT
+		VAR	swPos3byte0to1.swd_a_wheelAng3_deg,     	INIT=1,                            			EV=INIT
+		VAR	swd_ctr_sw3countr,                      	INIT=2,                            			EV=INIT
+		VAR	swd_crc_sw3crc,                         	INIT=3,                            			EV=INIT
+		VAR	mmd_enum_ctrlModeToApply,               	INIT=MM_LVC_E,                     			EV=INIT
+
+		--- Function Call
+		#for(i=1;i<=21;i++)
+		#{
+			#A400M_Init;
+		#}
+
+	 END ELEMENT  6
+
+	 ELEMENT 7
+
+		Comment -----------------------------
+		Comment Disturbance detected from SKF1 sensor.
+		Comment Disturbance not detected from SKF2 sensor.
+		Comment Disturbance not detected from SASA sensor.
+		Comment So driver steering wheel angle updated with the calculated angle from SKF2, SASA and previous value of SKF1 sensor.
+		Comment -----------------------------
+
+		----Inputs
+		VAR	swPos1byte0to4.swd_a_absolutAng_deg,    	INIT=11,                           			EV=INIT
+		VAR	swd_ctr_heartbeatCount,                 	INIT=13,                           			EV=INIT
+		VAR	swd_vel_wheelSpeed_degps,               	INIT=15,                           			EV=INIT
+		VAR	swPos3byte0to1.swd_a_wheelAng3_deg,     	INIT=4,                            			EV=INIT
+		VAR	swd_ctr_sw3countr,                      	INIT=5,                            			EV=INIT
+		VAR	swd_crc_sw3crc,                         	INIT=6,                            			EV=INIT
+		VAR	mmd_enum_ctrlModeToApply,               	INIT=MM_LVC_E,                     			EV=INIT
+
+		----Outputs
+		VAR	swpd_a_driverSteerWheel_deg,            	INIT=19.0,               					EV=0
+
+		#A400M_Init;
+
+	 END ELEMENT  7
+
+	 ELEMENT 8
+
+		Comment -----------------------------
+		Comment Disturbance detected from SKF1 sensor.
+		Comment Disturbance not detected from SKF2 sensor.
+		Comment Disturbance not detected from SASA sensor.
+		Comment So driver steering wheel angle updated with the calculated angle from SKF2, SASA and previous value of SKF1 sensor.
+		Comment -----------------------------
+
+		----Inputs
+		VAR	swPos1byte0to4.swd_a_absolutAng_deg,    	INIT=12,                           			EV=INIT
+		VAR	swd_ctr_heartbeatCount,                 	INIT=14,                           			EV=INIT
+		VAR	swd_vel_wheelSpeed_degps,               	INIT=16,                           			EV=INIT
+		VAR	swPos3byte0to1.swd_a_wheelAng3_deg,     	INIT=7,                            			EV=INIT
+		VAR	swd_ctr_sw3countr,                      	INIT=8,                            			EV=INIT
+		VAR	swd_crc_sw3crc,                         	INIT=9,                            			EV=INIT
+		VAR	mmd_enum_ctrlModeToApply,               	INIT=MM_LVC_E,                     			EV=INIT
+
+		----Outputs
+		VAR	swpd_a_driverSteerWheel_deg,            	INIT=0.0,                					EV=0
+		VAR	swpd_enum_driverSteerWheelValid,        	INIT=,                   					EV=SW_INVALID_E
+
+		#A400M_Init;
+
+	 END ELEMENT  8
+
+	 ELEMENT 9
+
+	-------Inputs
+		VAR	swPos1byte0to4.swd_a_absolutAng_deg,    	INIT=12,                           			EV=INIT
+		VAR	swd_ctr_heartbeatCount,                 	INIT=14,                           			EV=INIT
+		VAR	swd_vel_wheelSpeed_degps,               	INIT=16,                           			EV=INIT
+		VAR	swPos3byte0to1.swd_a_wheelAng3_deg,     	INIT=7,                            			EV=INIT
+		VAR	swd_ctr_sw3countr,                      	INIT=8,                            			EV=INIT
+		VAR	swd_crc_sw3crc,                         	INIT=9,                            			EV=INIT
+		VAR	mmd_enum_ctrlModeToApply,               	INIT=MM_LVC_E,                     			EV=INIT
+
+		--- Function Call
+		#for(i=1;i<=6;i++)
+		#{
+			#A400M_Init;
+		#}
+
+	 END ELEMENT  9
+
+	 ELEMENT 10
+
+		Comment -----------------------------
+		Comment Disturbance detected from SKF1 sensor.
+		Comment Disturbance not detected from SKF2 sensor.
+		Comment Disturbance not detected from SASA sensor.
+		Comment So driver steering wheel angle updated with the calculated angle from SKF2, SASA and previous value of SKF1 sensor.
+		Comment -----------------------------
+
+		----Inputs
+		VAR	swPos1byte0to4.swd_a_absolutAng_deg,    	INIT=12,                           			EV=INIT
+		VAR	swd_ctr_heartbeatCount,                 	INIT=14,                           			EV=INIT
+		VAR	swd_vel_wheelSpeed_degps,               	INIT=16,                           			EV=INIT
+		VAR	swPos3byte0to1.swd_a_wheelAng3_deg,     	INIT=7,                            			EV=INIT
+		VAR	swd_ctr_sw3countr,                      	INIT=8,                            			EV=INIT
+		VAR	swd_crc_sw3crc,                         	INIT=9,                            			EV=INIT
+		VAR	mmd_enum_ctrlModeToApply,               	INIT=MM_LVC_E,                     			EV=INIT
+
+		----Outputs
+		VAR	swpd_a_driverSteerWheel_deg,            	INIT=0.0,                					EV=0
+		VAR	swpd_enum_driverSteerWheelValid,        	INIT=SW_INVALID_E,       					EV=SW_INVALID_E
+
+		#A400M_Init;
+
+	 END ELEMENT  10
+
+	END TEST  --TEST 1

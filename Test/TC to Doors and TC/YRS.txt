@@ -1,0 +1,128 @@
+1. At row number: 13 any one of the following formats does not match 
+a. Set (.*) to (.*)
+b. Verify (.*) is (.*)
+
+2. At row number: 29 any one of the following formats does not match 
+a. Set (.*) to (.*)
+b. Verify (.*) is (.*)
+
+3. At row number: 29 any one of the following formats does not match 
+a. Set (.*) to (.*)
+b. Verify (.*) is (.*)
+
+4. At row number: 30 any one of the following formats does not match 
+a. Set (.*) to (.*)
+b. Verify (.*) is (.*)
+
+5. At row number: 30 any one of the following formats does not match 
+a. Set (.*) to (.*)
+b. Verify (.*) is (.*)
+
+6. At row number: 31 any one of the following formats does not match 
+a. Set (.*) to (.*)
+b. Verify (.*) is (.*)
+
+7. At row number: 31 any one of the following formats does not match 
+a. Set (.*) to (.*)
+b. Verify (.*) is (.*)
+
+8. At row number: 32 any one of the following formats does not match 
+a. Set (.*) to (.*)
+b. Verify (.*) is (.*)
+
+9. At row number: 32 any one of the following formats does not match 
+a. Set (.*) to (.*)
+b. Verify (.*) is (.*)
+
+10. At row number: 35 any one of the following formats does not match 
+a. Set (.*) to (.*)
+b. Verify (.*) is (.*)
+
+11. At row number: 35 any one of the following formats does not match 
+a. Set (.*) to (.*)
+b. Verify (.*) is (.*)
+
+12. At row number: 35 any one of the following formats does not match 
+a. Set (.*) to (.*)
+b. Verify (.*) is (.*)
+
+13. At row number: 35 any one of the following formats does not match 
+a. Set (.*) to (.*)
+b. Verify (.*) is (.*)
+
+14. At row number: 35 any one of the following formats does not match 
+a. Set (.*) to (.*)
+b. Verify (.*) is (.*)
+
+15. At row number: 35 any one of the following formats does not match 
+a. Set (.*) to (.*)
+b. Verify (.*) is (.*)
+
+16. At row number: 36 any one of the following formats does not match 
+a. Set (.*) to (.*)
+b. Verify (.*) is (.*)
+
+17. At row number: 38 any one of the following formats does not match 
+a. Set (.*) to (.*)
+b. Verify (.*) is (.*)
+
+18. At row number: 41 any one of the following formats does not match 
+a. Set (.*) to (.*)
+b. Verify (.*) is (.*)
+
+19. At row number: 41 any one of the following formats does not match 
+a. Set (.*) to (.*)
+b. Verify (.*) is (.*)
+
+20. At row number: 41 any one of the following formats does not match 
+a. Set (.*) to (.*)
+b. Verify (.*) is (.*)
+
+21. At row number: 42 any one of the following formats does not match 
+a. Set (.*) to (.*)
+b. Verify (.*) is (.*)
+
+22. At row number: 44 any one of the following formats does not match 
+a. Set (.*) to (.*)
+b. Verify (.*) is (.*)
+
+23. At row number: 47 there is a problem at parsing the time cycles. Make sure timing cycle in the format of "At: <time cycle>
+Set <input> to <value>
+Verify<output> to <value>"
+
+24. At row number: 48 any one of the following formats does not match 
+a. Set (.*) to (.*)
+b. Verify (.*) is (.*)
+
+25. At row number: 49 any one of the following formats does not match 
+a. Set (.*) to (.*)
+b. Verify (.*) is (.*)
+
+26. At row number: 50 there is a problem at parsing the time cycles. Make sure timing cycle in the format of "At: <time cycle>
+Set <input> to <value>
+Verify<output> to <value>"
+
+27. At row number: 53 there is a problem at parsing the time cycles. Make sure timing cycle in the format of "At: <time cycle>
+Set <input> to <value>
+Verify<output> to <value>"
+
+28. At row number: 54 any one of the following formats does not match 
+a. Set (.*) to (.*)
+b. Verify (.*) is (.*)
+
+29. At row number: 55 any one of the following formats does not match 
+a. Set (.*) to (.*)
+b. Verify (.*) is (.*)
+
+30. At row number: 56 there is a problem at parsing the time cycles. Make sure timing cycle in the format of "At: <time cycle>
+Set <input> to <value>
+Verify<output> to <value>"
+
+31. At row number: 74 any one of the following formats does not match 
+a. Set (.*) to (.*)
+b. Verify (.*) is (.*)
+
+32. At row number: 74 any one of the following formats does not match 
+a. Set (.*) to (.*)
+b. Verify (.*) is (.*)
+

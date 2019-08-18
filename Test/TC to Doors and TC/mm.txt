@@ -1,0 +1,28 @@
+1. At row number: 257 any one of the following formats does not match 
+a. Set (.*) to (.*)
+b. Verify (.*) is (.*)
+
+2. At row number: 258 any one of the following formats does not match 
+a. Set (.*) to (.*)
+b. Verify (.*) is (.*)
+
+3. At row number: 466 any one of the following formats does not match 
+a. Set (.*) to (.*)
+b. Verify (.*) is (.*)
+
+4. At row number: 485 any one of the following formats does not match 
+a. Set (.*) to (.*)
+b. Verify (.*) is (.*)
+
+5. At row number: 485 any one of the following formats does not match 
+a. Set (.*) to (.*)
+b. Verify (.*) is (.*)
+
+6. At row number: 605 any one of the following formats does not match 
+a. Set (.*) to (.*)
+b. Verify (.*) is (.*)
+
+7. At row number: 606 any one of the following formats does not match 
+a. Set (.*) to (.*)
+b. Verify (.*) is (.*)
+

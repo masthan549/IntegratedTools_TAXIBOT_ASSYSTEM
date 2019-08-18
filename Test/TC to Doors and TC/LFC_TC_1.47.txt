@@ -1,0 +1,3 @@
+1. At row number3: 490 any one of the following formats does not match 
+1. Set (.*) to (.*)
+2. Verify (.*) is (.*)
